@@ -1398,6 +1398,12 @@ body{ font-size:17px; }
 .scope-card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md); padding:24px; box-shadow:var(--shadow-sm); }
 .scope-card h3{ font-size:20px; font-weight:700; margin-bottom:12px; }
 .tags{ display:flex; flex-wrap:wrap; gap:6px; }
+.rollout-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin-bottom:48px}
+.rollout{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-sm)}
+.rollout-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.rollout-head span{color:var(--muted);font-size:14px}
+.rollout .tags{display:flex;flex-wrap:wrap;gap:8px}
+.rollout .tags span.ro{background:var(--good-tint);color:var(--good);border-color:transparent}
 .tags span{ font-size:13.5px; font-weight:600; padding:5px 11px; border-radius:8px; background:var(--bg); border:1px solid var(--border); }
 .scope-statement{ background:var(--gradient); color:#fff; border-radius:var(--radius-md); padding:26px; display:flex; align-items:center; font-size:21px; font-weight:800; line-height:1.3; box-shadow:0 14px 30px rgba(58,123,255,.25); }
 
@@ -1866,6 +1872,9 @@ body{ font-size:17px; }
       <div class="access fade-in"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg></div><div><b>Qonversion</b><span>Subscription and A/B test access</span></div></div>
       <div class="access fade-in"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div><div><b>App Store Connect</b><span>Upgraded access</span></div></div>
     </div>
+    <h3 class="subhead fade-in">Events rollout tracker</h3>
+    <p class="section-desc fade-in" style="margin-bottom:20px">Per-app rollout status for the events check-in, from the Q4 planning sheet.</p>
+    <div class="rollout-grid"><div class="rollout fade-in"><div class="rollout-head"><b>iOS</b><span>0 rolled out · 25 not started · 25 apps</span></div><div class="tags"><span class="">Authenticator</span><span class="">ID Photo</span><span class="">PBP Red</span><span class="">Printer/ePrint</span><span class="">Adblocker</span><span class="">Cleaner</span><span class="">Fasting</span><span class="">Home Cleaning</span><span class="">Keto</span><span class="">Menu Smart</span><span class="">PBP Purple (Cleanpath)</span><span class="">PDF Editor</span><span class="">ResumeIt</span><span class="">Soberly</span><span class="">Translate Ai</span><span class="">Video to Live</span><span class="">Affirmation</span><span class="">Caloric</span><span class="">Captions</span><span class="">Diet Plan</span><span class="">FM Radio</span><span class="">Location Tracker</span><span class="">PureCheck</span><span class="">Signature App</span><span class="">Snore tracker</span></div></div><div class="rollout fade-in"><div class="rollout-head"><b>Android</b><span>2 rolled out · 18 not started · 20 apps</span></div><div class="tags"><span class="ro">Authenticator</span><span class="ro">ID Photo</span><span class="">PBP Red</span><span class="">Printer/ePrint</span><span class="">App Blocker</span><span class="">Cleaner</span><span class="">Fasting</span><span class="">Keto</span><span class="">ResumeIt</span><span class="">Transcribe</span><span class="">AI Chat</span><span class="">AI Keyboard</span><span class="">Affirmation</span><span class="">Caloric</span><span class="">Captions</span><span class="">Diet Plan</span><span class="">FM Radio</span><span class="">Location Tracker</span><span class="">PureCheck</span><span class="">Snore tracker</span></div></div></div>
     <p class="closing-statement fade-in">For selected apps, the developer who owns an app can now see its data and releases directly, without waiting on others.</p>
   </div>
 </section>
